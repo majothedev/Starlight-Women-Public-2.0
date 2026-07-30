@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Starlight Women</title>
+    <meta name="description" content="Supporting migrant, refugee, and BIPoC women in Berlin and Brandenburg through community, advocacy, and empowerment programs."/>
+    <link rel="icon" type="image/x-icon" href="/assets/images/Starlight Women Logo.png">
+    <link rel="stylesheet" href="/assets/css/index.css"/>
+  </head>
+  <body>
+
+    <!-- Skip link: first focusable element on the page -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+
+    <!-- NAVIGATION -->
+    <header id="site-header">
+      <div class="container">
+        <div class="header-bar">
+
+          <!-- Logo / Wordmark -->
+          <a href="/" class="logo" aria-label="Starlight Women Berlin/Brandenburg e.V. — Home">
+            <svg class="logo__mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0c.6 4.8 2.2 8.1 5 10.9 2.8 2.8 6.1 4.4 10.9 5-4.8.6-8.1 2.2-10.9 5-2.8 2.8-4.4 6.1-5 10.9-.6-4.8-2.2-8.1-5-10.9C4.2 18.2.9 16.6.1 15.9c4.8-.6 8.1-2.2 10.9-5 2.8-2.8 4.4-6.1 5-10.9z" transform="scale(0.85) translate(2, 1)"/>
+            </svg>
+            <span class="logo__text">
+              <span class="logo__name">Starlight Women</span>
+              <span class="logo__org">Berlin/Brandenburg e.V.</span>
+            </span>
+          </a>
+
+          <!-- Desktop navigation: hidden below 1024px -->
+
+          <nav aria-label="Main navigation" class="nav-desktop">
+            <ul class="nav-desktop__list">
+              <li><a href="#main-content" aria-current="page" class="nav-link">Home</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#" class="nav-link">Events</a></li>
+              <li><a href="#" class="nav-link">Team</a></li>
+              <li><a href="#" class="nav-link">Volunteer</a></li>
+            </ul>
+            <a href="#donate" class="btn-donate">Donate</a>
+          </nav>
+
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Activate dark mode">
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle__label">Dark</span>
+          </button>
+
+          <!-- Mobile menu toggle: visible below 1024px -->
+
+          <button
+            id="menu-toggle"
+            type="button"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <svg id="icon-menu-open" class="menu-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg id="icon-menu-close" class="menu-toggle__icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile navigation panel: collapsed by default, opened by JS -->
+
+      <nav id="mobile-menu" aria-label="Mobile navigation" class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="#main-content" aria-current="page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Volunteer</a></li>
+        </ul>
+        <a href="#donate" class="btn-donate mobile-nav-cta">Donate</a>
+      </nav>
+    </header>
+
+    <!-- 
+      PLACEHOLDER CONTENT
+      For previewing the sticky header on scroll only.
+      Will be replaced by the real Hero component next.
+    -->
+
+    <main id="main-content" class="preview">
+      <section class="preview__intro" aria-label="Hero section">
+        <div class="preview__intro-content">
+          <h1>Empowering Women and Girls Across African countries</h1>
+          <p>Promoting representation, inclusion, and education for marginalized women and girls.</p>
+        </div>
+      </section>
+      <section id="about" class="about" aria-labelledby="about-heading">
+        <div class="container about__inner">
+          <div class="about__media">
+            <img src="/assets/images/Starlight Women Picture edited.png" alt="Starlight Women meeting" />
+            <div class="about__media-card">Together against domestic violence</div>
+          </div>
+          <div class="about__content">
+            <h2 id="about-heading">About Us</h2>
+            <p>
+              STARLIGHT WOMEN is a group of like-minded women from West African residents in Berlin/Brandenburg Germany.
+
+              We join forces to create help and support for the LESS PRIVILEGED in our countries of origin, and also here in Berlin/Brandenburg Germany. Starlight Women was formed in November 2021, in Berlin Germany.
+
+              We are a non-profit organization, with practical social projects aimed at alleviating and improving the social and economic standards of disadvantaged people in our rural communities. These we do through donations in kind, empowerment, workshops on domestic and sexual violence, and support to bereaved women and girls.
+
+              We also run scholarship projects, especially for people who can not afford basic education.
+
+              Our goal is to unite us and bring encouragement, and motivation, and to convey inspiration.
+
+              We are also involved in our immediate community, Berlin/Brandenburg. Here we raise awareness of domestic and sexual violence against women and young girls, and ways of combating it.
+
+              We also support each other in our community, organizing educational projects in order to create wholeness and well-being.
+
+              Our goal is to empower people to achieve their life goals.
+            </p>
+            <div class="about__actions">
+              <a href="team.html" class="about__btn about__btn--primary">See More</a>
+              <a href="events.html" class="about__btn about__btn--secondary">Our Activities</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mission" class="mission" aria-labelledby="mission-heading">
+        <div class="container mission__inner">
+          <div class="mission__content">
+            <h1 id="mission-heading">Mission</h1>
+            <p>
+              Starlight Women is dedicated to empowering marginalized women and girls across Africa through education, advocacy, and inclusive representation.
+              We strive to amplify their voices, foster equality, and provide the necessary resources and support to ensure they achieve their full potential.
+            </p>
+          </div>
+          <div class="mission__media" aria-hidden="true">
+            <img src="/assets/images/04 Starlight Women.png" alt="Mission image" />
+          </div>
+        </div>
+      </section>
+      <section id="vision" class="vision" aria-labelledby="vision-heading">
+        <div class="container vision__inner">
+          <div class="vision__media" aria-hidden="true">
+            <img src="/assets/images/06 Starlight Women.png" alt="Vision image" />
+          </div>
+          <div class="vision__content">
+            <h1 id="vision-heading">Vision</h1>
+            <p>
+              Starlight Women envisions a world where every woman, and girl, regardless of her background has the opportunity to thrive be heard and contribute meaningfully to our society. We aim to create a future where gender equality is a reality and every girl has access to education and empowerment.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="values" class="core-values" aria-labelledby="values-heading">
+        <div class="container core-values__inner">
+          <div class="core-values__content">
+            <h2 id="values-heading">Core Values</h2>
+            <ul class="core-values__list">
+              <li>Empowerment</li>
+              <li>Inclusion</li>
+              <li>Education</li>
+              <li>Advocacy</li>
+              <li>Integrity</li>
+              <li>Collaboration</li>
+            </ul>
+          </div>
+          <div class="core-values__media" aria-hidden="true">
+            <div class="core-values__grid">
+              <img src="/assets/images/01 Starlight Women.png" alt="Starlight event 1" />
+              <img src="/assets/images/02 Starlight Women.png" alt="Starlight event 2" />
+              <img src="/assets/images/Starlight Women Picture edited.png" alt="Starlight event 3" />
+              <img src="/assets/images/01 Starlight Women.png" alt="Starlight event 4" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="support" class="support" aria-labelledby="support-heading">
+        <div class="container support__inner">
+          <h1 id="support-heading">Support Us</h1>
+          <div class="support__cards">
+            <article class="support__card support__card--volunteer">
+              <h2>Volunteer</h2>
+              <p>
+                You can be of tremendous help through sharing your skills on EVENT, MENTORSHIP, SKILL ACQUISITION, etc. Fill out our volunteer form to get started and become part of a community committed to positive change. Together, we can create a brighter future.
+              </p>
+              <a href="#" class="support__btn">Volunteer</a>
+            </article>
+            <article class="support__card support__card--donate">
+              <h2>Donate</h2>
+              <p>
+                Your donation to Starlight Women helps in organizing programs that empower marginalized women and girls across Africa such as promoting education, inclusion, etc. With your help, we can promote education, inclusion, and create lasting change in communities that need it most.
+              </p>
+              <a href="#" class="support__btn">Donate Now</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="contact" aria-labelledby="contact-heading">
+        <div class="container contact__inner">
+          <div class="contact__content">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p class="contact__intro"><strong>We’d love to hear from you! Whether you have questions, need more information, or want to get involved, feel free to reach out to us.</strong></p>
+            <div class="contact__links">
+              <a href="mailto:starlightwomen21@gmail.com">starlightwomen21@gmail.com</a>
+              <a href="https://www.facebook.com/Starlight%20Women" target="_blank" rel="noreferrer">Facebook</a>
+              <a href="https://wa.me/4917636265569?text=Hello%20Starlight%20Women,%20I%20would%20like%20to%20get%20involved." target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="tel:+4917670506724">Call</a>
+            </div>
+          </div>
+          <div class="contact__details" aria-label="Contact details">
+            <div class="contact__item">
+              <span class="contact__label">Phone</span>
+              <a href="tel:+4917670506724">+49 176 7050 6724</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Facebook</span>
+              <a href="https://www.facebook.com/Starlight%20Women" target="_blank" rel="noreferrer">Starlight Women</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Email</span>
+              <a href="mailto:starlightwomen21@gmail.com">starlightwomen21@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="container site-footer__inner">
+          <a href="#main-content" class="site-footer__back">Back to Home</a>
+          <div class="site-footer__links">
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="#support">Support</a>
+          </div>
+          <p>© 2026 Starlight Women. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
