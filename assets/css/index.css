@@ -603,7 +603,7 @@ html {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../images/Starlight Women Picture edited.png') center/cover no-repeat;
+  background: url('../assets/images/Starlight Women Picture edited.png') center/cover no-repeat;
   opacity: 0.35;
   z-index: 0;
 }
@@ -1008,7 +1008,7 @@ html {
   }
 
   .mission__media {
-    background: url('/assets/images/04 Starlight Women.png') center/cover no-repeat;
+    background: url('../assets/images/04 Starlight Women.png') center/cover no-repeat;
     min-height: 260px;
   }
 
@@ -1030,7 +1030,7 @@ html {
   }
 
   .vision__media {
-    background: url('/assets/images/06 Starlight Women.png') center/cover no-repeat;
+    background: url('../assets/images/06 Starlight Women.png') center/cover no-repeat;
     min-height: 260px;
   }
 
