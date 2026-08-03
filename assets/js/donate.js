@@ -1,6 +1,6 @@
 /*
   Starlight Women Berlin/Brandenburg e.V.
-  Shared page behavior for the home page.
+  Donate page interactions: mobile menu toggle + sticky header + theme toggle.
  */
 
 (function () {
@@ -54,7 +54,6 @@
 
   applyTheme(getPreferredTheme());
 
-  /* Mobile menu toggle */
   function openMenu() {
     mobileMenu.classList.add('is-open');
     menuToggle.setAttribute('aria-expanded', 'true');
@@ -85,12 +84,10 @@
     saveTheme(nextTheme);
   });
 
-  // Close the menu when a link inside it is activated.
   mobileMenu.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', closeMenu);
   });
 
-  // Close on Escape, and return focus to the toggle button.
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape' && isMenuOpen()) {
       closeMenu();
@@ -98,17 +95,11 @@
     }
   });
 
-  // Close the mobile menu automatically if the viewport grows past the
-  // mobile breakpoint (e.g. rotating a tablet or resizing a window).
   const desktopQuery = window.matchMedia('(min-width: 1024px)');
   desktopQuery.addEventListener('change', function (event) {
     if (event.matches && isMenuOpen()) closeMenu();
   });
 
-  /* Sticky header shadow
-    Adds a shadow once the user has scrolled past a small threshold.
-    Throttled via requestAnimationFrame to avoid layout thrashing.
- */
   const SCROLL_THRESHOLD = 8;
   let ticking = false;
 
@@ -128,6 +119,5 @@
     }
   }, { passive: true });
 
-  // Set correct state on initial load (e.g. page loaded mid-scroll on refresh).
   updateHeaderState();
 })();
