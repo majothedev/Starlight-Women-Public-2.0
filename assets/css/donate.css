@@ -1,0 +1,11 @@
+.page-donate .preview__intro::before {
+  background: url('../images/04 Starlight Women.png') center/cover no-repeat;
+  opacity: 0.35;
+}
+
+.page-donate .btn-donate.is-active,
+.page-donate .btn-donate[aria-current="page"] {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 12px 28px rgba(23, 52, 140, 0.24);
+  transform: translateY(-1px);
+}
