@@ -74,6 +74,123 @@
   line-height: 1.7;
 }
 
+.page-donate .transfer-instructions {
+  padding: 24px 0 56px;
+}
+
+.page-donate .transfer-instructions__inner {
+  padding: 32px 40px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, var(--color-surface), var(--color-primary-light));
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.page-donate .transfer-instructions h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  color: var(--color-primary-dark);
+}
+
+.page-donate .transfer-instructions h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: var(--color-text);
+}
+
+.page-donate .transfer-instructions__list {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 12px;
+  color: var(--color-text);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.page-donate .transfer-instructions__list li {
+  padding-left: 6px;
+}
+
+.dark .page-donate .payment-methods__card {
+  background: linear-gradient(135deg, rgba(35, 71, 198, 0.26), rgba(15, 23, 42, 0.96));
+  border-color: rgba(148, 163, 184, 0.2);
+  box-shadow: 0 18px 44px rgba(2, 8, 23, 0.38);
+}
+
+.dark .page-donate .payment-methods__card h3 {
+  color: var(--color-primary-light);
+}
+
+.dark .page-donate .payment-methods__note {
+  background: rgba(15, 23, 42, 0.86);
+  border-left-color: var(--color-primary-light);
+  color: #cbd5e1;
+}
+
+.dark .page-donate .transfer-instructions__inner {
+  background: linear-gradient(135deg, rgba(23, 37, 84, 0.95), rgba(15, 23, 42, 0.98));
+  border-color: rgba(148, 163, 184, 0.22);
+  box-shadow: 0 20px 48px rgba(2, 8, 23, 0.42);
+}
+
+.dark .page-donate .transfer-instructions h1 {
+  color: #f8fbff;
+}
+
+.dark .page-donate .transfer-instructions h2,
+.dark .page-donate .transfer-instructions__list {
+  color: #e2e8f0;
+}
+
+.page-donate .let-us-know {
+  padding: 0 0 56px;
+}
+
+.page-donate .let-us-know__inner {
+  padding: 32px;
+  border-radius: 28px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.page-donate .let-us-know h1 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  color: var(--color-primary-dark);
+}
+
+.page-donate .let-us-know p {
+  margin: 0 0 14px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.page-donate .let-us-know a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.dark .page-donate .let-us-know__inner {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: rgba(148, 163, 184, 0.2);
+  box-shadow: 0 18px 44px rgba(2, 8, 23, 0.4);
+}
+
+.dark .page-donate .let-us-know h1 {
+  color: #f8fbff;
+}
+
+.dark .page-donate .let-us-know p {
+  color: #e2e8f0;
+}
+
+.dark .page-donate .let-us-know a {
+  color: #bfdbfe;
+}
+
 @media (min-width: 768px) {
   .page-donate .payment-methods__inner {
     grid-template-columns: 1.2fr 0.8fr;
