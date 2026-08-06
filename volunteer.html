@@ -1,11 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be the Change: Volunteer with Us</title>
+    <meta
+      name="description"
+      content="Join Starlight Women as a volunteer and support our community initiatives."
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/images/Starlight Women Logo.png" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/donate.css" />
   </head>
-  <body>
-    <h1>Hello World Volunteer</h1>
+  <body class="page-donate">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header">
+      <div class="container">
+        <div class="header-bar">
+          <a href="index.html" class="logo" aria-label="Starlight Women Berlin/Brandenburg e.V. — Home">
+            <img class="logo__mark" src="./assets/images/Starlight Women Logo.png" alt="Starlight Women logo" />
+            <span class="logo__text">
+              <span class="logo__name">Starlight Women</span>
+              <span class="logo__org">Berlin/Brandenburg e.V.</span>
+            </span>
+          </a>
+
+          <nav aria-label="Main navigation" class="nav-desktop">
+            <ul class="nav-desktop__list">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="index.html#about" class="nav-link">About</a></li>
+              <li><a href="events.html" class="nav-link">Events</a></li>
+              <li><a href="team.html" class="nav-link">Team</a></li>
+              <li><a href="volunteer.html" class="nav-link" aria-current="page">Volunteer</a></li>
+            </ul>
+            <a href="donate.html" class="btn-donate">Donate</a>
+          </nav>
+
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Activate dark mode">
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle__label">Dark</span>
+          </button>
+
+          <button
+            id="menu-toggle"
+            type="button"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <svg id="icon-menu-open" class="menu-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg id="icon-menu-close" class="menu-toggle__icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-menu" aria-label="Mobile navigation" class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="volunteer.html" aria-current="page">Volunteer</a></li>
+        </ul>
+        <a href="donate.html" class="btn-donate mobile-nav-cta">Donate</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="preview">
+      <section class="preview__intro" aria-label="Volunteer hero section">
+        <div class="preview__intro-content">
+          <h1>Be the Change: Volunteer with Us</h1>
+          <p>
+            Volunteering with Starlight Women offers a unique opportunity to make a real difference in the lives of marginalized women and girls across Africa. By donating your time and skills, you can help empower communities, advocate for gender equality, and support girl child education.
+          </p>
+        </div>
+      </section>
+
+      <section class="payment-methods" aria-labelledby="volunteer-form-heading">
+        <div class="container payment-methods__inner">
+          <div class="payment-methods__content">
+            <h1 id="volunteer-form-heading">Volunteer Form</h1>
+            <h2>Share your skills and be part of the change</h2>
+            <p>
+              We are excited to welcome volunteers who want to contribute their energy, experience, and compassion to our mission.
+            </p>
+          </div>
+          <div class="payment-methods__details">
+            <div class="payment-methods__card">
+              <h3>Coming soon</h3>
+              <p>The volunteer form will be added here in the next step.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-heading">
+        <div class="container contact__inner">
+          <div class="contact__content">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p class="contact__intro"><strong>We would love to hear from you. Reach out with questions or support requests.</strong></p>
+            <div class="contact__links">
+              <a href="mailto:starlightwomen21@gmail.com">starlightwomen21@gmail.com</a>
+              <a href="https://web.facebook.com/profile.php?id=100075484283119" target="_blank" rel="noreferrer">Facebook</a>
+              <a href="https://wa.me/4917636265569?text=Hello%20Starlight%20Women,%20I%20would%20like%20to%20get%20involved." target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </div>
+          <div class="contact__details" aria-label="Contact details">
+            <div class="contact__item">
+              <span class="contact__label">Phone</span>
+              <a href="tel:+4917670506724">+49 176 7050 6724</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Email</span>
+              <a href="mailto:starlightwomen21@gmail.com">starlightwomen21@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container site-footer__inner">
+          <a href="index.html" class="site-footer__back">Back to Home</a>
+          <div class="site-footer__links">
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="donate.html">Donate</a>
+          </div>
+          <p>© 2026 Starlight Women. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./assets/js/donate.js"></script>
   </body>
 </html>
