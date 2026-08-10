@@ -88,17 +88,143 @@
       <section class="payment-methods" aria-labelledby="volunteer-form-heading">
         <div class="container payment-methods__inner">
           <div class="payment-methods__content">
-            <h1 id="volunteer-form-heading">Volunteer Form</h1>
-            <h2>Share your skills and be part of the change</h2>
-            <p>
-              We are excited to welcome volunteers who want to contribute their energy, experience, and compassion to our mission.
+            <h1 id="volunteer-form-heading" data-i18n="formTitle">Become a Volunteer</h1>
+            <h2 data-i18n="formIntro">Help us empower women worldwide.</h2>
+            <p data-i18n="formDescription">
+              Share your skills, time, and compassion to support women and girls through meaningful community work.
             </p>
+            <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch to German">
+              <span data-i18n="langLabel">Deutsch</span>
+            </button>
           </div>
           <div class="payment-methods__details">
-            <div class="payment-methods__card">
-              <h3>Coming soon</h3>
-              <p>The volunteer form will be added here in the next step.</p>
-            </div>
+            <form id="volunteer-form" class="volunteer-form" novalidate>
+              <fieldset class="volunteer-form__section">
+                <legend data-i18n="sectionPersonal">PERSONAL INFORMATION</legend>
+                <p class="volunteer-form__required" data-i18n="requiredNotice">This section is compulsory.</p>
+                <div class="volunteer-form__grid volunteer-form__grid--2">
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelFirstName">First Name</span>
+                    <input type="text" name="firstName" required />
+                  </label>
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelLastName">Last Name</span>
+                    <input type="text" name="lastName" required />
+                  </label>
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelEmail">Email</span>
+                    <input type="email" name="email" required />
+                  </label>
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelPhone">Phone</span>
+                    <input type="tel" name="phone" required />
+                  </label>
+                </div>
+                <label class="volunteer-form__field">
+                  <span data-i18n="labelDob">Date of Birth</span>
+                  <input type="date" name="dob" required />
+                </label>
+                <label class="volunteer-form__field">
+                  <span data-i18n="labelAddress">Address</span>
+                  <textarea name="address" rows="3" required></textarea>
+                </label>
+                <label class="volunteer-form__field">
+                  <span data-i18n="labelCountry">Country</span>
+                  <input type="text" name="country" required />
+                </label>
+              </fieldset>
+
+              <fieldset class="volunteer-form__section">
+                <legend data-i18n="sectionOccupation">OCCUPATION</legend>
+                <div class="volunteer-form__grid volunteer-form__grid--2">
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelCompany">Company</span>
+                    <input type="text" name="company" placeholder="Example Ltd" />
+                  </label>
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelPosition">Position</span>
+                    <input type="text" name="position" placeholder="Project Coordinator" />
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="volunteer-form__section">
+                <legend data-i18n="sectionInterests">VOLUNTEER INTERESTS</legend>
+                <label class="volunteer-form__field">
+                  <span data-i18n="labelDepartment">Department</span>
+                  <select name="department" required>
+                    <option value="" disabled selected data-i18n="optionSelect">Select a department</option>
+                    <option value="children" data-i18n="optionChildren">Children &amp; Youths</option>
+                    <option value="seniors" data-i18n="optionSeniors">Seniors</option>
+                    <option value="hunger" data-i18n="optionHunger">Homelessness &amp; Hunger</option>
+                    <option value="disability" data-i18n="optionDisability">Disability services</option>
+                    <option value="health" data-i18n="optionHealth">Health and Wellness</option>
+                  </select>
+                </label>
+                <label class="volunteer-form__field">
+                  <span data-i18n="labelSkills">Skills</span>
+                  <textarea name="skills" rows="4" placeholder="Tell us about your relevant skills" data-i18n-placeholder="skillsPlaceholder" required></textarea>
+                </label>
+                <label class="volunteer-form__field">
+                  <span data-i18n="labelExperience">Experience</span>
+                  <textarea name="experience" rows="4" placeholder="Share your volunteer or professional experience" data-i18n-placeholder="experiencePlaceholder" required></textarea>
+                </label>
+              </fieldset>
+
+              <fieldset class="volunteer-form__section">
+                <legend data-i18n="sectionAvailability">AVAILABILITY</legend>
+                <div class="volunteer-form__checkbox-group" role="group" aria-label="Preferred days">
+                  <label><input type="checkbox" name="days" value="monday" /><span data-i18n="dayMonday">Monday</span></label>
+                  <label><input type="checkbox" name="days" value="tuesday" /><span data-i18n="dayTuesday">Tuesday</span></label>
+                  <label><input type="checkbox" name="days" value="wednesday" /><span data-i18n="dayWednesday">Wednesday</span></label>
+                  <label><input type="checkbox" name="days" value="thursday" /><span data-i18n="dayThursday">Thursday</span></label>
+                  <label><input type="checkbox" name="days" value="friday" /><span data-i18n="dayFriday">Friday</span></label>
+                  <label><input type="checkbox" name="days" value="weekend" /><span data-i18n="dayWeekend">Weekend</span></label>
+                </div>
+                <div class="volunteer-form__grid volunteer-form__grid--2">
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelHours">Hours Per Week</span>
+                    <input type="number" name="hoursPerWeek" min="1" max="40" required />
+                  </label>
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelStartDate">Start Date</span>
+                    <input type="date" name="startDate" required />
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="volunteer-form__section">
+                <legend data-i18n="sectionDocuments">DOCUMENTS</legend>
+                <div class="volunteer-form__grid volunteer-form__grid--2">
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelCv">Upload CV</span>
+                    <input type="file" name="cv" />
+                  </label>
+                  <label class="volunteer-form__field">
+                    <span data-i18n="labelPortfolio">Upload Portfolio</span>
+                    <input type="file" name="portfolio" />
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="volunteer-form__section">
+                <legend data-i18n="sectionAdditional">ADDITIONAL INFORMATION</legend>
+                <label class="volunteer-form__field">
+                  <span data-i18n="labelComments">Comments</span>
+                  <textarea name="comments" rows="4" required></textarea>
+                </label>
+              </fieldset>
+
+              <p id="form-message" class="volunteer-form__message" aria-live="polite"></p>
+
+              <div class="volunteer-form__actions">
+                <label class="volunteer-form__checkbox">
+                  <input type="checkbox" name="policies" required />
+                  <span data-i18n="policyText">I agree to the policies</span>
+                </label>
+                <button class="volunteer-form__submit" type="submit" data-i18n="submitText">Submit Application</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -140,6 +266,6 @@
       </footer>
     </main>
 
-    <script src="./assets/js/donate.js"></script>
+    <script src="./assets/js/volunteer.js"></script>
   </body>
 </html>
