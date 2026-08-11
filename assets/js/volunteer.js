@@ -12,7 +12,7 @@
   const formMessage = document.getElementById('form-message');
   const submitButton = volunteerForm ? volunteerForm.querySelector('.volunteer-form__submit') : null;
   const root = document.documentElement;
-  const formEndpoint = 'https://script.google.com/macros/s/AKfycbzXXM4rLmUwZhIPRXJa7x3Oj9uf9TefsxpPd1Xn3XJgLo0AUn0-sX8cSyGLOP3apHM/exec';
+  const formEndpoint = 'https://script.google.com/macros/s/AKfycbyNGblb4gy1I0zggweA9NpdLr5Fg91Akhj-DV0igF7APrD9AOHExTBwxWv7qdZ-Q9er/exec';
 
   const translations = {
     en: {
@@ -305,31 +305,30 @@
     }
 
     fetch(formEndpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+    method: 'POST',
+    mode: 'no-cors',
+    body: new URLSearchParams({
+      payload: JSON.stringify(payload)
     })
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error('Request failed');
-        }
-        return response.json().catch(function () {
-          return {};
-        });
-      })
-      .then(function () {
-        setFormMessage(content.formSuccess, 'success');
-        volunteerForm.reset();
-      })
-      .catch(function () {
-        setFormMessage(currentLanguage === 'de' ? 'Die Bewerbung konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.' : 'Your application could not be sent. Please try again later.', 'error');
-      })
-      .finally(function () {
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.textContent = content.submitText;
-        }
-      });
+  })
+    .then(function () {
+      setFormMessage(content.formSuccess, 'success');
+      volunteerForm.reset();
+    })
+    .catch(function () {
+      setFormMessage(
+        currentLanguage === 'de'
+          ? 'Die Bewerbung konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.'
+          : 'Your application could not be sent. Please try again later.',
+        'error'
+      );
+    })
+    .finally(function () {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = content.submitText;
+      }
+    });
   }
 
   if (!header || !menuToggle || !mobileMenu || !themeToggle) return;
