@@ -12,6 +12,7 @@
   const formMessage = document.getElementById('form-message');
   const submitButton = volunteerForm ? volunteerForm.querySelector('.volunteer-form__submit') : null;
   const root = document.documentElement;
+  const formEndpoint = 'https://script.google.com/macros/s/REPLACE_WITH_YOUR_SCRIPT_ID/exec';
 
   const translations = {
     en: {
@@ -255,6 +256,82 @@
     return true;
   }
 
+  function serializeVolunteerForm() {
+    const payload = {};
+
+    if (!volunteerForm) return payload;
+
+    volunteerForm.querySelectorAll('input, textarea, select').forEach(function (field) {
+      if (!field.name) return;
+
+      if (field.type === 'checkbox') {
+        if (field.name === 'days') {
+          if (!payload.days) {
+            payload.days = [];
+          }
+          if (field.checked) {
+            payload.days.push(field.value);
+          }
+        } else if (field.name === 'policies') {
+          payload.policies = field.checked ? 'accepted' : 'not-accepted';
+        }
+        return;
+      }
+
+      if (field.type === 'file') {
+        payload[field.name] = field.files && field.files[0] ? field.files[0].name : '';
+        return;
+      }
+
+      payload[field.name] = field.value;
+    });
+
+    return payload;
+  }
+
+  function submitVolunteerForm() {
+    if (!volunteerForm || !formEndpoint) {
+      setFormMessage(document.documentElement.lang === 'de' ? 'Das Formular konnte nicht gesendet werden.' : 'The form could not be submitted.', 'error');
+      return;
+    }
+
+    const currentLanguage = document.documentElement.lang === 'de' ? 'de' : 'en';
+    const content = translations[currentLanguage] || translations.en;
+    const payload = serializeVolunteerForm();
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = currentLanguage === 'de' ? 'Wird gesendet...' : 'Sending...';
+    }
+
+    fetch(formEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error('Request failed');
+        }
+        return response.json().catch(function () {
+          return {};
+        });
+      })
+      .then(function () {
+        setFormMessage(content.formSuccess, 'success');
+        volunteerForm.reset();
+      })
+      .catch(function () {
+        setFormMessage(currentLanguage === 'de' ? 'Die Bewerbung konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.' : 'Your application could not be sent. Please try again later.', 'error');
+      })
+      .finally(function () {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = content.submitText;
+        }
+      });
+  }
+
   if (!header || !menuToggle || !mobileMenu || !themeToggle) return;
 
   applyTheme(getPreferredTheme());
@@ -328,10 +405,7 @@
       if (!validateVolunteerForm()) {
         return;
       }
-      const message = document.documentElement.lang === 'de'
-        ? 'Vielen Dank! Ihre Bewerbung wurde eingereicht.'
-        : 'Thank you! Your application has been submitted.';
-      setFormMessage(message, 'success');
+      submitVolunteerForm();
     });
   }
 
