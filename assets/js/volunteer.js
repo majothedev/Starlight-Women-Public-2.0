@@ -12,7 +12,7 @@
   const formMessage = document.getElementById('form-message');
   const submitButton = volunteerForm ? volunteerForm.querySelector('.volunteer-form__submit') : null;
   const root = document.documentElement;
-  const formEndpoint = 'https://script.google.com/macros/s/REPLACE_WITH_YOUR_SCRIPT_ID/exec';
+  const formEndpoint = 'https://script.google.com/macros/s/AKfycbzXXM4rLmUwZhIPRXJa7x3Oj9uf9TefsxpPd1Xn3XJgLo0AUn0-sX8cSyGLOP3apHM/exec';
 
   const translations = {
     en: {
