@@ -1,11 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events - Starlight Women</title>
+    <meta
+      name="description"
+      content="Explore the community events and outreach stories from Starlight Women."
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/images/Starlight Women Logo.png" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/events.css" />
   </head>
-  <body>
-    <h1>Hello World Events</h1>
+  <body class="page-events">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header">
+      <div class="container">
+        <div class="header-bar">
+          <a href="index.html" class="logo" aria-label="Starlight Women Berlin/Brandenburg e.V. — Home">
+            <img class="logo__mark" src="./assets/images/Starlight Women Logo.png" alt="Starlight Women logo" />
+            <span class="logo__text">
+              <span class="logo__name">Starlight Women</span>
+              <span class="logo__org">Berlin/Brandenburg e.V.</span>
+            </span>
+          </a>
+
+          <nav aria-label="Main navigation" class="nav-desktop">
+            <ul class="nav-desktop__list">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="index.html#about" class="nav-link">About</a></li>
+              <li><a href="events.html" class="nav-link" aria-current="page">Events</a></li>
+              <li><a href="team.html" class="nav-link">Team</a></li>
+              <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            </ul>
+            <a href="donate.html" class="btn-donate">Donate</a>
+          </nav>
+
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Activate dark mode">
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle__label">Dark</span>
+          </button>
+
+          <button
+            id="menu-toggle"
+            type="button"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <svg id="icon-menu-open" class="menu-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg id="icon-menu-close" class="menu-toggle__icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-menu" aria-label="Mobile navigation" class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="events.html" aria-current="page">Events</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+        </ul>
+        <a href="donate.html" class="btn-donate mobile-nav-cta">Donate</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="page-events__main">
+      <section class="events-hero" aria-label="Starlight Women events introduction">
+        <div class="container events-hero__inner">
+          <p class="eyebrow">Our Story in Action</p>
+          <h1>Starlight Women Events</h1>
+          <p>
+            From wellness circles and school support initiatives to leadership forums and humanitarian outreach,
+            our events create space for care, learning, advocacy, and community solidarity.
+          </p>
+        </div>
+      </section>
+
+      <section class="events-overview" aria-label="Event highlights">
+        <div class="container">
+          <div class="events-overview__grid">
+            <div class="overview-card">
+              <strong>14</strong>
+              <span>Impact stories</span>
+            </div>
+            <div class="overview-card">
+              <strong>Community</strong>
+              <span>Driven support</span>
+            </div>
+            <div class="overview-card">
+              <strong>Education</strong>
+              <span>And empowerment</span>
+            </div>
+            <div class="overview-card">
+              <strong>Advocacy</strong>
+              <span>For women & girls</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-gallery" aria-labelledby="events-heading">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow--muted">Highlights</p>
+            <h2 id="events-heading">Community events and outreach moments</h2>
+          </div>
+
+          <div class="event-list">
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 01</p>
+                <h3>Women’s Wellness Circle</h3>
+                <p>
+                  A reflective and encouraging gathering focused on emotional wellbeing, self-care, and support for women navigating life challenges in the community.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>May 2023</li>
+                  <li>Wellbeing</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Women wellness circle" />
+                <video controls poster="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 02</p>
+                <h3>School Support Drive</h3>
+                <p>
+                  This outreach brought school materials, encouragement, and learning resources to students who needed support to stay confident and engaged in school.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Brandenburg</li>
+                  <li>June 2023</li>
+                  <li>Education</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80" alt="School support drive" />
+                <video controls poster="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 03</p>
+                <h3>Domestic Violence Awareness Day</h3>
+                <p>
+                  Community education and solidarity sessions to raise awareness, promote reporting, and create safer spaces for women and girls affected by violence.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>July 2023</li>
+                  <li>Advocacy</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80" alt="Awareness event" />
+                <video controls poster="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 04</p>
+                <h3>Youth Leadership Workshop</h3>
+                <p>
+                  A creative learning space where young women explored leadership, communication, and practical ways to envision a stronger future for themselves and their communities.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>August 2023</li>
+                  <li>Leadership</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80" alt="Youth leadership workshop" />
+                <video controls poster="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 05</p>
+                <h3>Community Food Relief</h3>
+                <p>
+                  A supply and care initiative organized to support families facing food insecurity, helping them feel seen, supported, and more hopeful during difficult times.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Brandenburg</li>
+                  <li>September 2023</li>
+                  <li>Relief</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80" alt="Food relief event" />
+                <video controls poster="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 06</p>
+                <h3>Girls’ Education Fundraiser</h3>
+                <p>
+                  An event dedicated to raising resources and awareness for girls who deserve access to education, confidence, and a future built on opportunity.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>October 2023</li>
+                  <li>Fundraising</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Girls education fundraiser" />
+                <video controls poster="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 07</p>
+                <h3>Care Package Distribution</h3>
+                <p>
+                  A kindness-focused outreach where women and families received essentials, encouragement, and practical support to help them feel cared for and uplifted.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>November 2023</li>
+                  <li>Support</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Care package distribution" />
+                <video controls poster="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 08</p>
+                <h3>Senior Women Mentorship</h3>
+                <p>
+                  A meaningful session offering mentorship, storytelling, and encouragement for older women who have guided communities for decades and continue to inspire others.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>December 2023</li>
+                  <li>Mentorship</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Senior women mentorship" />
+                <video controls poster="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 09</p>
+                <h3>Refugee Integration Day</h3>
+                <p>
+                  A welcoming community event built around cultural exchange, networking, and practical support for women rebuilding safety, belonging, and opportunity.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>January 2024</li>
+                  <li>Integration</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Refugee integration day" />
+                <video controls poster="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 10</p>
+                <h3>Skills for Confidence</h3>
+                <p>
+                  A hands-on workshop that helped participants build confidence through practical skill building, peer encouragement, and meaningful discussion.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Brandenburg</li>
+                  <li>February 2024</li>
+                  <li>Skills</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Skills for confidence workshop" />
+                <video controls poster="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 11</p>
+                <h3>Christmas Relief Outreach</h3>
+                <p>
+                  A festive giving campaign bringing warmth, encouragement, and essential support to families in need during the holiday season.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>December 2024</li>
+                  <li>Holiday Support</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Christmas relief outreach" />
+                <video controls poster="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 12</p>
+                <h3>Health Screening Day</h3>
+                <p>
+                  A proactive community health initiative that offered screenings, guidance, and referrals to help women access care and feel supported.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>March 2024</li>
+                  <li>Health</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80" alt="Health screening day" />
+                <video controls poster="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 13</p>
+                <h3>Creative Arts for Healing</h3>
+                <p>
+                  An artistic and therapeutic gathering that encouraged expression, healing, and joy through creativity and shared community experience.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>April 2024</li>
+                  <li>Art</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Creative arts for healing" />
+                <video controls poster="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-card__content">
+                <p class="event-card__label">Event 14</p>
+                <h3>Women in Leadership Forum</h3>
+                <p>
+                  A powerful platform for inspired women leaders to share experiences, discuss challenges, and encourage the next generation to step boldly into leadership roles.
+                </p>
+                <ul class="event-card__meta">
+                  <li>Berlin</li>
+                  <li>May 2024</li>
+                  <li>Leadership</li>
+                </ul>
+              </div>
+              <div class="event-card__media">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Women in leadership forum" />
+                <video controls poster="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-heading">
+        <div class="container contact__inner">
+          <div class="contact__content">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p class="contact__intro"><strong>We would love to hear from you. Reach out with questions or support requests.</strong></p>
+            <div class="contact__links">
+              <a href="mailto:starlightwomen21@gmail.com">starlightwomen21@gmail.com</a>
+              <a href="https://web.facebook.com/profile.php?id=100075484283119" target="_blank" rel="noreferrer">Facebook</a>
+              <a href="https://wa.me/4917636265569?text=Hello%20Starlight%20Women,%20I%20would%20like%20to%20get%20involved." target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </div>
+          <div class="contact__details" aria-label="Contact details">
+            <div class="contact__item">
+              <span class="contact__label">Phone</span>
+              <a href="tel:+4917670506724">+49 176 7050 6724</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Email</span>
+              <a href="mailto:starlightwomen21@gmail.com">starlightwomen21@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container site-footer__inner">
+          <a href="index.html" class="site-footer__back">Back to Home</a>
+          <div class="site-footer__links">
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="donate.html">Donate</a>
+          </div>
+          <p>© 2026 Starlight Women. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./assets/js/events.js"></script>
   </body>
 </html>
