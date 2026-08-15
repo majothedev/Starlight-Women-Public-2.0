@@ -1,11 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team - Starlight Women</title>
+    <meta
+      name="description"
+      content="Meet the members and staff supporting the mission of Starlight Women."
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/images/Starlight Women Logo.png" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/team.css" />
   </head>
-  <body>
-    <h1>Hello World Team</h1>
+  <body class="page-team">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header">
+      <div class="container">
+        <div class="header-bar">
+          <a href="index.html" class="logo" aria-label="Starlight Women Berlin/Brandenburg e.V. — Home">
+            <img class="logo__mark" src="./assets/images/Starlight Women Logo.png" alt="Starlight Women logo" />
+            <span class="logo__text">
+              <span class="logo__name">Starlight Women</span>
+              <span class="logo__org">Berlin/Brandenburg e.V.</span>
+            </span>
+          </a>
+
+          <nav aria-label="Main navigation" class="nav-desktop">
+            <ul class="nav-desktop__list">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="index.html#about" class="nav-link">About</a></li>
+              <li><a href="events.html" class="nav-link">Events</a></li>
+              <li><a href="team.html" class="nav-link" aria-current="page">Team</a></li>
+              <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            </ul>
+            <a href="donate.html" class="btn-donate">Donate</a>
+          </nav>
+
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Activate dark mode">
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle__label">Dark</span>
+          </button>
+
+          <button
+            id="menu-toggle"
+            type="button"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <svg id="icon-menu-open" class="menu-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg id="icon-menu-close" class="menu-toggle__icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-menu" aria-label="Mobile navigation" class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="team.html" aria-current="page">Team</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+        </ul>
+        <a href="donate.html" class="btn-donate mobile-nav-cta">Donate</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="page-team__main preview">
+      <section class="preview__intro team-hero" aria-label="Team introduction">
+        <div class="preview__intro-content">
+          <p class="eyebrow">The people behind the mission</p>
+          <h1>Meet the Starlight Women Team</h1>
+          <p>
+            Our organization is powered by committed members and staff who lead outreach, planning,
+            mentorship, communications, and community support across every project we deliver.
+          </p>
+        </div>
+      </section>
+
+      <section class="team-overview" aria-label="Team highlights">
+        <div class="container">
+          <div class="team-overview__grid">
+            <div class="overview-card">
+              <strong>15</strong>
+              <span>Team portraits</span>
+            </div>
+            <div class="overview-card">
+              <strong>Leadership</strong>
+              <span>Guiding the mission</span>
+            </div>
+            <div class="overview-card">
+              <strong>Community</strong>
+              <span>Supporting women and girls</span>
+            </div>
+            <div class="overview-card">
+              <strong>Outreach</strong>
+              <span>Across every project</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-gallery" aria-labelledby="team-heading">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow--muted">Members and staff</p>
+            <h2 id="team-heading">A gallery of the people who keep the work moving</h2>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card team-card--wide team-card--landscape">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/Starlight Women Picture edited.png" data-team-title="Founder & Coordinator" data-team-role="Leadership" data-team-caption="Oversees the vision, partnerships, and long-term direction of Starlight Women." data-team-alt="Founder and coordinator portrait">
+                <img src="./assets/images/Starlight Women Picture edited.png" alt="Founder and coordinator portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 01</p>
+                <h3>Founder & Coordinator</h3>
+                <p>Oversees the vision, partnerships, and long-term direction of Starlight Women.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--portrait">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/01 Starlight Women.png" data-team-title="Program Lead" data-team-role="Programs" data-team-caption="Supports the planning and delivery of workshops, outreach, and community programs." data-team-alt="Program lead portrait">
+                <img src="./assets/images/01 Starlight Women.png" alt="Program lead portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 02</p>
+                <h3>Program Lead</h3>
+                <p>Supports the planning and delivery of workshops, outreach, and community programs.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--landscape">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/02 Starlight Women.png" data-team-title="Outreach Lead" data-team-role="Community" data-team-caption="Coordinates local engagement and community-facing support activities." data-team-alt="Outreach lead portrait">
+                <img src="./assets/images/02 Starlight Women.png" alt="Outreach lead portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 03</p>
+                <h3>Outreach Lead</h3>
+                <p>Coordinates local engagement and community-facing support activities.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--portrait">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/03 Starlight Women.png" data-team-title="Education Support Lead" data-team-role="Education" data-team-caption="Helps design learning-focused activities and support for young people." data-team-alt="Education support lead portrait">
+                <img src="./assets/images/03 Starlight Women.png" alt="Education support lead portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 04</p>
+                <h3>Education Support Lead</h3>
+                <p>Helps design learning-focused activities and support for young people.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--landscape">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/04 Starlight Women.png" data-team-title="Events Coordinator" data-team-role="Events" data-team-caption="Organizes event logistics, schedules, and on-site coordination." data-team-alt="Events coordinator portrait">
+                <img src="./assets/images/04 Starlight Women.png" alt="Events coordinator portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 05</p>
+                <h3>Events Coordinator</h3>
+                <p>Organizes event logistics, schedules, and on-site coordination.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--portrait">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/05 Starlight Women.png" data-team-title="Finance & Admin" data-team-role="Operations" data-team-caption="Supports record keeping, planning, and day-to-day operations." data-team-alt="Finance and administration portrait">
+                <img src="./assets/images/05 Starlight Women.png" alt="Finance and administration portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 06</p>
+                <h3>Finance & Admin</h3>
+                <p>Supports record keeping, planning, and day-to-day operations.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--landscape">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/06 Starlight Women.png" data-team-title="Communications Lead" data-team-role="Media" data-team-caption="Shapes public updates, storytelling, and community communication." data-team-alt="Communications lead portrait">
+                <img src="./assets/images/06 Starlight Women.png" alt="Communications lead portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 07</p>
+                <h3>Communications Lead</h3>
+                <p>Shapes public updates, storytelling, and community communication.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--portrait">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/0c9d86e2289257e21fab6305169ab5be.png" data-team-title="Youth Mentor" data-team-role="Mentorship" data-team-caption="Provides encouragement and guidance for girls and young adults." data-team-alt="Youth mentor portrait">
+                <img src="./assets/images/0c9d86e2289257e21fab6305169ab5be.png" alt="Youth mentor portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 08</p>
+                <h3>Youth Mentor</h3>
+                <p>Provides encouragement and guidance for girls and young adults.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--landscape">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/22b695bb1f2017b0fe6510d626cdc244.png" data-team-title="Community Volunteer" data-team-role="Support" data-team-caption="Helps with hands-on service, setup, and outreach assistance." data-team-alt="Community volunteer portrait">
+                <img src="./assets/images/22b695bb1f2017b0fe6510d626cdc244.png" alt="Community volunteer portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 09</p>
+                <h3>Community Volunteer</h3>
+                <p>Helps with hands-on service, setup, and outreach assistance.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--portrait">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/2d0014ce874c54fc7962f2e7b621c054.png" data-team-title="Logistics Coordinator" data-team-role="Operations" data-team-caption="Ensures materials, transport, and event flow stay on track." data-team-alt="Logistics coordinator portrait">
+                <img src="./assets/images/2d0014ce874c54fc7962f2e7b621c054.png" alt="Logistics coordinator portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 10</p>
+                <h3>Logistics Coordinator</h3>
+                <p>Ensures materials, transport, and event flow stay on track.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--wide team-card--landscape">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/fr37f9shhrTAS920484mr739424WKD153.jpeg" data-team-title="Media & Storytelling" data-team-role="Creative" data-team-caption="Documents events and shares the stories that connect the community." data-team-alt="Media and storytelling portrait">
+                <img src="./assets/images/fr37f9shhrTAS920484mr739424WKD153.jpeg" alt="Media and storytelling portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 11</p>
+                <h3>Media & Storytelling</h3>
+                <p>Documents events and shares the stories that connect the community.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--portrait">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/dbaae983814ea755465202d52e2a6d0e.png" data-team-title="Wellness Support" data-team-role="Care" data-team-caption="Supports emotional wellbeing and a welcoming environment for everyone." data-team-alt="Wellness support portrait">
+                <img src="./assets/images/dbaae983814ea755465202d52e2a6d0e.png" alt="Wellness support portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 12</p>
+                <h3>Wellness Support</h3>
+                <p>Supports emotional wellbeing and a welcoming environment for everyone.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--landscape">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/c91bd2b9dd1c22f8afa5ef6a08178fef.png" data-team-title="Partnerships Lead" data-team-role="Networking" data-team-caption="Builds relationships with supporters, donors, and partner organizations." data-team-alt="Partnerships lead portrait">
+                <img src="./assets/images/c91bd2b9dd1c22f8afa5ef6a08178fef.png" alt="Partnerships lead portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 13</p>
+                <h3>Partnerships Lead</h3>
+                <p>Builds relationships with supporters, donors, and partner organizations.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--portrait">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/bce1dc370e6b609846e63055f24e2849.png" data-team-title="Workshop Facilitator" data-team-role="Training" data-team-caption="Leads learning sessions and helps participants build new skills." data-team-alt="Workshop facilitator portrait">
+                <img src="./assets/images/bce1dc370e6b609846e63055f24e2849.png" alt="Workshop facilitator portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 14</p>
+                <h3>Workshop Facilitator</h3>
+                <p>Leads learning sessions and helps participants build new skills.</p>
+              </div>
+            </article>
+
+            <article class="team-card team-card--wide team-card--landscape">
+              <button class="team-card__media-button" type="button" data-team-photo="./assets/images/b5d5fbef65f236ec7dad110333a00314.png" data-team-title="General Member" data-team-role="Community" data-team-caption="Represents the wider member base that supports every project with care." data-team-alt="General member portrait">
+                <img src="./assets/images/b5d5fbef65f236ec7dad110333a00314.png" alt="General member portrait" loading="lazy" />
+              </button>
+              <div class="team-card__content">
+                <p class="team-card__label">Member 15</p>
+                <h3>General Member</h3>
+                <p>Represents the wider member base that supports every project with care.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-heading">
+        <div class="container contact__inner">
+          <div class="contact__content">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p class="contact__intro"><strong>We would love to hear from you. Reach out with questions or support requests.</strong></p>
+            <div class="contact__links">
+              <a href="mailto:starlightwomen21@gmail.com">starlightwomen21@gmail.com</a>
+              <a href="https://web.facebook.com/profile.php?id=100075484283119" target="_blank" rel="noreferrer">Facebook</a>
+              <a href="https://wa.me/4917636265569?text=Hello%20Starlight%20Women,%20I%20would%20like%20to%20get%20involved." target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </div>
+          <div class="contact__details" aria-label="Contact details">
+            <div class="contact__item">
+              <span class="contact__label">Phone</span>
+              <a href="tel:+4917670506724">+49 176 7050 6724</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Email</span>
+              <a href="mailto:starlightwomen21@gmail.com">starlightwomen21@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container site-footer__inner">
+          <a href="index.html" class="site-footer__back">Back to Home</a>
+          <div class="site-footer__links">
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="donate.html">Donate</a>
+          </div>
+          <p>© 2026 Starlight Women. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <div id="team-lightbox" class="team-lightbox" hidden>
+      <div class="team-lightbox__backdrop" data-lightbox-close></div>
+      <div class="team-lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="team-lightbox-title">
+        <button id="team-lightbox-close" class="team-lightbox__close" type="button" aria-label="Close photo preview">×</button>
+        <img id="team-lightbox-image" class="team-lightbox__image" alt="" />
+        <div class="team-lightbox__caption">
+          <p id="team-lightbox-role" class="team-lightbox__role"></p>
+          <h3 id="team-lightbox-title"></h3>
+          <p id="team-lightbox-caption"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/team.js"></script>
   </body>
 </html>

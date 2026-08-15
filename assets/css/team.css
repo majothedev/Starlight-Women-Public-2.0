@@ -1,0 +1,282 @@
+.page-team .btn-donate.is-active,
+.page-team .btn-donate[aria-current="page"] {
+	background-color: var(--color-primary-dark);
+	box-shadow: 0 12px 28px rgba(23, 52, 140, 0.24);
+	transform: translateY(-1px);
+}
+
+.page-team .preview__intro::before {
+	background-image: url('../images/Starlight Women Picture edited.png');
+}
+
+.page-team__main {
+	padding-top: calc(var(--header-height) + 32px);
+}
+
+body.team-lightbox-open {
+	overflow: hidden;
+}
+
+.team-hero {
+	background:
+		linear-gradient(135deg, rgba(23, 52, 140, 0.86), rgba(35, 71, 198, 0.72)),
+		var(--color-surface-soft);
+}
+
+.team-hero .preview__intro-content {
+	max-width: 800px;
+}
+
+.team-overview {
+	padding: 18px 0 8px;
+}
+
+.team-overview__grid {
+	display: grid;
+	gap: 18px;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.overview-card {
+	display: grid;
+	gap: 6px;
+	padding: 22px 18px;
+	border: 1px solid var(--color-border);
+	border-radius: 20px;
+	background: var(--color-surface);
+	box-shadow: var(--shadow-sm);
+}
+
+.overview-card strong {
+	font-size: clamp(1.1rem, 2vw, 1.5rem);
+	color: var(--color-primary-dark);
+}
+
+.overview-card span {
+	color: var(--color-text-muted);
+	font-size: 0.95rem;
+}
+
+.team-gallery {
+	padding: 32px 0 24px;
+}
+
+.section-heading {
+	margin-bottom: 28px;
+}
+
+.section-heading h2 {
+	margin: 8px 0 0;
+	font-size: clamp(1.9rem, 4vw, 3rem);
+	line-height: 1.15;
+	letter-spacing: -0.04em;
+}
+
+.team-grid {
+	display: grid;
+	gap: 22px;
+}
+
+.team-card {
+	overflow: hidden;
+	border-radius: 28px;
+	border: 1px solid var(--color-border);
+	background: linear-gradient(135deg, rgba(237, 243, 255, 0.5), var(--color-surface));
+	box-shadow: var(--shadow-md);
+}
+
+.team-card--wide {
+	grid-column: span 1;
+}
+
+.team-card__media-button {
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	text-align: left;
+}
+
+.team-card__media-button img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	aspect-ratio: 4 / 5;
+	transition: transform var(--transition-base);
+}
+
+.team-card--landscape .team-card__media-button img {
+	aspect-ratio: 16 / 10;
+}
+
+.team-card--portrait .team-card__media-button img {
+	aspect-ratio: 4 / 5;
+}
+
+.team-card--wide .team-card__media-button img {
+	aspect-ratio: 16 / 9;
+}
+
+.team-card__content {
+	display: grid;
+	gap: 10px;
+	padding: 18px;
+}
+
+.team-card__label {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--color-primary-dark);
+}
+
+.team-card h3 {
+	margin: 0;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	letter-spacing: -0.03em;
+}
+
+.team-card p {
+	margin: 0;
+	color: var(--color-text-muted);
+	line-height: 1.75;
+}
+
+.team-card__media-button:hover img,
+.team-card__media-button:focus-visible img {
+	transform: scale(1.02);
+}
+
+.team-card__media-button:focus-visible {
+	outline: 3px solid rgba(35, 71, 198, 0.25);
+	outline-offset: -3px;
+}
+
+.team-lightbox {
+	position: fixed;
+	inset: 0;
+	z-index: 120;
+	display: grid;
+	place-items: center;
+	padding: 24px;
+}
+
+.team-lightbox[hidden] {
+	display: none;
+}
+
+.team-lightbox__backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(2, 6, 23, 0.72);
+	backdrop-filter: blur(8px);
+}
+
+.team-lightbox__dialog {
+	position: relative;
+	z-index: 1;
+	width: min(920px, 100%);
+	max-height: calc(100vh - 48px);
+	overflow: auto;
+	border-radius: 28px;
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	box-shadow: 0 28px 64px rgba(2, 6, 23, 0.32);
+}
+
+.team-lightbox__close {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	width: 44px;
+	height: 44px;
+	border-radius: 999px;
+	border: 0;
+	background: rgba(15, 23, 42, 0.82);
+	color: var(--color-white);
+	font-size: 28px;
+	line-height: 1;
+	z-index: 2;
+}
+
+.team-lightbox__image {
+	display: block;
+	width: 100%;
+	max-height: min(62vh, 720px);
+	object-fit: cover;
+	background: var(--color-surface-muted);
+}
+
+.team-lightbox__caption {
+	display: grid;
+	gap: 8px;
+	padding: 20px 22px 24px;
+}
+
+.team-lightbox__role {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--color-primary-dark);
+}
+
+.team-lightbox__caption h3 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.team-lightbox__caption p {
+	margin: 0;
+	color: var(--color-text-muted);
+}
+
+.dark .team-hero {
+	background:
+		linear-gradient(135deg, rgba(35, 71, 198, 0.18), rgba(15, 23, 42, 0.92)),
+		var(--color-surface);
+}
+
+.dark .overview-card,
+.dark .team-card,
+.dark .team-lightbox__dialog {
+	background: linear-gradient(135deg, rgba(17, 24, 39, 0.98), rgba(22, 32, 54, 0.95));
+	border-color: rgba(148, 163, 184, 0.2);
+}
+
+.dark .team-lightbox__close {
+	background: rgba(255, 255, 255, 0.12);
+}
+
+@media (min-width: 768px) {
+	.team-overview__grid {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.team-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.team-card--wide {
+		grid-column: span 2;
+	}
+}
+
+@media (min-width: 1024px) {
+	.page-team__main {
+		padding-top: calc(var(--header-height-desktop) + 36px);
+	}
+
+	.team-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.team-card--wide {
+		grid-column: span 2;
+	}
+}
