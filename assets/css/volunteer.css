@@ -5,6 +5,10 @@
   transform: translateY(-1px);
 }
 
+.page-volunteer .preview__intro::before {
+  background-image: url('../images/1ae2864db064ccef42e64dcbb0dfdb437.png');
+}
+
 .page-volunteer .payment-methods {
   padding: 56px 0 24px;
 }
