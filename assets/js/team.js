@@ -15,9 +15,7 @@
 	const root = document.documentElement;
 	const lightbox = document.getElementById('team-lightbox');
 	const lightboxImage = document.getElementById('team-lightbox-image');
-	const lightboxTitle = document.getElementById('team-lightbox-title');
-	const lightboxRole = document.getElementById('team-lightbox-role');
-	const lightboxCaption = document.getElementById('team-lightbox-caption');
+	const lightboxNumber = document.getElementById('team-lightbox-number');
 	const lightboxClose = document.getElementById('team-lightbox-close');
 	let activeTrigger = null;
 
@@ -78,21 +76,19 @@
 	}
 
 	function openLightbox(trigger) {
-		if (!lightbox || !lightboxImage || !lightboxTitle || !lightboxRole || !lightboxCaption) {
+		if (!lightbox || !lightboxImage || !lightboxNumber) {
 			return;
 		}
 
 		const photo = trigger.getAttribute('data-team-photo') || '';
 		const title = trigger.getAttribute('data-team-title') || '';
-		const role = trigger.getAttribute('data-team-role') || '';
-		const caption = trigger.getAttribute('data-team-caption') || '';
 		const alt = trigger.getAttribute('data-team-alt') || title;
+		const numberElement = trigger.closest('.team-card')?.querySelector('.team-card__label');
+		const number = numberElement ? numberElement.textContent.trim() : (trigger.getAttribute('data-team-number') || '');
 
 		lightboxImage.src = photo;
 		lightboxImage.alt = alt;
-		lightboxTitle.textContent = title;
-		lightboxRole.textContent = role;
-		lightboxCaption.textContent = caption;
+		lightboxNumber.textContent = number;
 		lightbox.hidden = false;
 		document.body.classList.add('team-lightbox-open');
 		activeTrigger = trigger;
