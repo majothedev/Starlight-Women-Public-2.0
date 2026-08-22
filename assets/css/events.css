@@ -114,6 +114,11 @@
   gap: 12px;
 }
 
+.event-card--upcoming {
+  border-color: var(--color-primary);
+  background: linear-gradient(135deg, rgba(35, 71, 198, 0.1), var(--color-surface));
+}
+
 .event-card__label {
   margin: 0;
   font-size: 12px;
@@ -179,6 +184,16 @@
 
 .event-card__media--gallery img {
   height: 160px;
+}
+
+.event-card__media--feature {
+  grid-template-columns: 1fr;
+}
+
+.event-card__media--feature img {
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
 }
 
 .event-card__media .facebook-video-embed {
